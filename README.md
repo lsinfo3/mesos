@@ -22,12 +22,11 @@ You need this, if you want to connect to mesos directly, because you
 Examples are for OSX, but adaptable of course (assuming you are using homebrew, which you should).
 
 1. Install dependencies `brew install wget git autoconf automake libtool subversion maven apr`
-2. Download the mesos version we are using (currently 0.27) `wget http://www.apache.org/dist/mesos/0.27.1/mesos-0.27.0.tar.gz`
-3. Extract it somewhere `tar -zxf mesos-0.27.1.tar.gz` (we will call the resulting directory MESOS_HOME)
+2. Download the mesos version we are using (currently 0.27) `wget http://archive.apache.org/dist/mesos/0.27.0/mesos-0.27.0.tar.gz`
+3. Extract it somewhere `tar -zxf mesos-0.27.0.tar.gz` (we will call the resulting directory MESOS_HOME)
 4. `cd` into MESOS_HOME
-5. run `./bootstrap`
-6. `mkdir build && cd build`
-7. `../configure --with-apr=/usr/local/Cellar/apr/1.5.2/libexec && make` (the --with-libapr line may obviously change)`
+5. `mkdir build && cd build`
+6. `../configure --with-apr=/usr/local/Cellar/apr/1.5.2/libexec && make` (the --with-libapr line may obviously change)`
 
 
 # How to use our very own mesos cluster
